@@ -1,0 +1,71 @@
+
+.content{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  .con{
+    margin-left:30px;
+    margin-right:30px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    .title{
+      padding-top: 15vh;
+      text-align: center;
+      .tit{
+        margin-bottom: 1rem;
+        font-size:2.5rem;
+        font-weight: 500;
+      } 
+      .desc{
+        font-size:1.1rem;
+      }
+    }
+    .under-content{
+      width: 80%;
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom:2rem;
+      color:white;
+      text-align: center;
+      
+    }
+  }
+}
+.modelS{
+  background-image: url('../images/model-s.jpg');
+}
+.modelX{
+  background-image: url('../images/model-x.jpg');
+}
+.modelY{
+  background-image: url('../images/Model-Y-First-content.jpg');
+}
+.model3{
+  background-image: url('../images/Model-3-Horizontal.jpg');
+}
+.solarRoof{
+  background-image: url('../images/Solar-Roof-First-content.webp');
+}
+.solarPanels{
+  background-image: url('../images/Solar-Panels-First-Content.jpg');
+}
+
+@media (max-width:768px){
+  .content{
+    .under-content{
+      gap:1rem;
+      flex-direction: column;
+    }
+  }
+}

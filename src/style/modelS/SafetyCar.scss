@@ -1,0 +1,25 @@
+.safety-car{
+  width:100%;
+  padding:3rem 0 0;
+  .safety-container{
+    width:100%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 25% 75%;
+    img{
+      max-width: 100%;
+    }
+    button{
+      width:100%;
+    }
+  }
+}
+
+@media (max-width:768px){
+  .safety-car{
+    .safety-container{
+      grid-template-columns: repeat(1, 1fr);
+      gap:2rem;
+    }
+  }
+}

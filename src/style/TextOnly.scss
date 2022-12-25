@@ -1,0 +1,22 @@
+.text-only{
+  width:90%;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap:1.3rem;
+  flex-direction: column;
+  .title{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .desc{
+    font-size:1.1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width:768px){
+  .text-only{
+    margin-left: 0 !important;
+  }
+}

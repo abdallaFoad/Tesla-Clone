@@ -1,0 +1,28 @@
+.info{
+  color:white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap:5px;
+  .title{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin:0;
+    padding:0;
+  }
+  .desc{
+    margin:0;
+    padding:0;
+  }
+}
+@media (min-width:320px) and (max-width:538px){
+  .info{
+    .title{
+      font-size:1.1rem;
+    }
+    .desc{
+      font-size: .7rem;
+    }
+  }
+}

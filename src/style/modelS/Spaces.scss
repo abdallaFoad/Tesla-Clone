@@ -1,0 +1,133 @@
+@import "../Config.scss";
+.spaces {
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 0;
+  .spaces-container {
+    width:90%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin:0 auto;
+    .img {
+      img {
+        width: 100%;
+      }
+    }
+    .space-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      color: white;
+      h1 {
+        span {
+          color: white;
+          font-weight: 600;
+        }
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: $milky-color;
+        margin-bottom: 2rem;
+      }
+      .spaces-btns {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        button {
+          border: 2px solid #222;
+          width: 200px;
+          background-color: transparent;
+          color: $milky-color;
+          font-size: 0.9rem;
+          padding: 3px;
+          border-radius: 4px;
+          transition: all .4s ease-in-out;
+        }
+        .active{
+          color:white;
+          border-color: white;
+        }
+      }
+      .car-con {
+        ul {
+          padding-left: 0;
+        }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width:100%;
+        .range{width: 100%;}
+        .acc{width: 100%;}
+        li{
+          position:relative;
+          padding:1rem 0;
+          h3{
+            font-size:1.1rem;
+          }
+          p{
+            font-size: .9rem;
+            margin:0;
+          }
+          &:before{
+            content: '';
+            position:absolute;
+            width:30%;
+            height:1px;
+            top:0;
+            left:0;
+            background-color: $milky-color;
+          }
+        }
+      }
+    }
+  }
+  .compare{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width:1024px){
+  .spaces{
+    .spaces-container{
+      .space-content{
+        .spaces-btns{
+          button{
+            width:150px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:786px){
+  .spaces{
+    .spaces-container{
+      .space-content{
+        .spaces-btns{
+          button{
+            width:100px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width:320px) and (max-width:767px){
+  .spaces{
+    .spaces-container{
+      grid-template-columns: 1fr;
+      .space-content{
+        .spaces-btns{
+          button{
+            width:100px
+          }
+        }
+      }
+    }
+  }
+}

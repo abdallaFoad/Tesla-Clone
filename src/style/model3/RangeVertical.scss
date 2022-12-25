@@ -1,0 +1,51 @@
+.range-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  padding: 3rem 0;
+  .vertical-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: space-between;
+    height: 100%;
+    .range-top {
+      span {
+        margin-bottom: 0.6rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+      .title {
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+      .range-btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        width: 100%;
+        margin-top: 2rem;
+      }
+    }
+    .con-para {
+      .paragraph {
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .range-vertical {
+    .vertical-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+}

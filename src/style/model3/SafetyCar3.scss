@@ -1,0 +1,19 @@
+.safety-car3{
+  width:100%;
+  padding:3rem 0;
+  background-color: #fff;
+  .sef-car-container{
+    width:90%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 70% 30%;
+  }
+}
+
+@media (max-width: 768px){
+  .safety-car3{
+    .sef-car-container{
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.performance{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width:100%;
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .allInfo{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding:3rem 0;
+    gap:2rem;
+  }
+}
+@media (min-width:320px) and (max-width:538px){
+  .performance{
+    .allInfo{
+      gap:5px;
+    }
+  }
+}

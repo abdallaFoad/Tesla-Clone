@@ -1,0 +1,16 @@
+.arrow-top{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:40px;
+  height:40px;
+  position:fixed;
+  top:4rem;
+  right:1rem;
+  cursor: pointer;
+  z-index: 20;
+  svg{
+    font-size:2rem;
+    font-weight: bold;
+  }
+}

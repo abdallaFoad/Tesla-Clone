@@ -1,0 +1,32 @@
+.plus-btn{
+  width: 200px;
+  padding:.5rem 0;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  &:hover .icon{
+    background-color: #222;
+    svg{
+      color:#eee
+    }
+  }
+  .icon{
+    transition: all .4s;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border:3px solid #222;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+      font-size:1.3rem;
+      font-weight: bold;
+    }
+  }
+}

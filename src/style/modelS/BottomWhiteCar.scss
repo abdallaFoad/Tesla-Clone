@@ -1,0 +1,46 @@
+.bottom-white-car {
+  background-color: white;
+  width: 100%;
+  padding: 3rem 0;
+  .w-car-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+
+    .w-car-content {
+      display: flex;
+      gap: 3rem;
+      flex-direction: column;
+      .title {
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+      .w-car-btns {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+
+    .w-car-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width:320px) and (max-width:538px){
+  .bottom-white-car{
+    .w-car-container{
+      grid-template-columns: 1fr;
+      .w-car-content{
+        .w-car-btns{
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

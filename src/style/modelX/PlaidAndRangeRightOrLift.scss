@@ -1,0 +1,34 @@
+.PlaidAndRangeRightOrLeft {
+  > div {
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    gap: 3%;
+    .performance {
+      height: 100%;
+    }
+    .plaid-horizon {
+      .horizon-container {
+        gap:3rem;
+        .paragraph {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+.imgRight {
+  grid-template-columns: 27% 70%;
+}
+.imgLeft {
+  grid-template-columns: 70% 27%;
+}
+@media (max-width: 786px) {
+  .PlaidAndRangeRightOrLeft {
+    > div {
+      grid-template-columns: 1fr;
+    }
+  }
+}

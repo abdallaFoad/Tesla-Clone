@@ -1,0 +1,50 @@
+.plaid-horizon{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:3rem;
+  width:100%;
+  height:100%;
+  padding:1rem 0;
+  .horizon-container{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    .top{
+      span{
+        margin-bottom: .6rem;
+        font-size:1.1rem;
+        font-weight: 400;
+      }
+      .title{
+        margin-bottom: 1rem;
+        font-size:1.4rem;
+        font-weight: 600;
+      }
+      .paragraph{
+        font-size:1rem;
+        line-height: 1.5;
+      }
+    }
+    .my-btns{
+      display:flex;
+      flex-direction: column;
+      gap:.6rem;
+      width:100%;
+      margin-top:2rem;
+    }
+  }
+}
+
+@media (max-width:768px){
+  .plaid-horizon{
+    .horizon-container{
+      flex-direction: column;
+      gap:2rem;
+    }
+  }
+}

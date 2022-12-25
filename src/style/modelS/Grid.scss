@@ -1,0 +1,24 @@
+.text-img{
+  width:100%;
+  background-color: black;
+  padding:5rem 0;
+  .container{
+    width:90%;
+    .box{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      color:white;
+    }
+  }
+}
+
+@media (max-width:768px){
+  .text-img{
+    .container{
+      .box{
+        grid-template-columns: 1fr;
+        gap:2rem;
+      }
+    }
+  }
+}

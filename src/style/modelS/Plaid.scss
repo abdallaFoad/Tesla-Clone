@@ -1,0 +1,48 @@
+.plaid{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:3rem;
+  width:100%;
+  padding:5rem 0;
+  .plaid-container{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    align-items: flex-start;
+    justify-content:center;
+    gap:10%;
+    .btns{
+      flex-basis:30%;
+      span{
+        margin-bottom: .6rem;
+        font-size:1.1rem;
+        font-weight: 400;
+      }
+      .title{
+        margin-bottom: 1rem;
+        font-size:1.4rem;
+        font-weight: 600;
+      }
+      .my-btn{
+        display:flex;
+        flex-direction: column;
+        gap:.6rem;
+      }
+    }
+    .paragraph{
+      flex-basis: 60%;
+      font-size:1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media (max-width:768px){
+  .plaid{
+    .plaid-container{
+      flex-direction: column;
+      gap:2rem;
+    }
+  }
+}
