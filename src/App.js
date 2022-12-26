@@ -11,24 +11,23 @@ import SolarRoof from "./pages/SolarRoof";
 import Shop from "./pages/Shop";
 import TeslaAccount from "./pages/TeslaAccount";
 import ArrowTop from "./components/ArrowTop";
-
-
+import Layout from "./pages/Layout";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <ArrowTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/model3" element={<Model3 />} />
-        <Route path="ModelS" element={<ModelS />} />
-        <Route path="/ModelX" element={<ModelX />} />
-        <Route path="/ModelY" element={<ModelY />} />
-        <Route path="/solarPanels" element={<SolarPanels />} />
-        <Route path="/solarRoof" element={<SolarRoof />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/teslaAccount" element={<TeslaAccount />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="model3" element={<Model3 />} />
+          <Route path="ModelS" element={<ModelS />} />
+          <Route path="ModelX" element={<ModelX />} />
+          <Route path="ModelY" element={<ModelY />} />
+          <Route path="solarPanels" element={<SolarPanels />} />
+          <Route path="solarRoof" element={<SolarRoof />} />
+          <Route path="shop" element={<Shop />} />
+          <Route path="teslaAccount" element={<TeslaAccount />} />
+        </Route>
       </Routes>
     </div>
   );
